@@ -24,6 +24,5 @@ repository/ → Acceso a base de datos (Spring Data JPA)
 dto/        → Objetos de transferencia de datos (entrada/salida)
 entity/     → Entidades del modelo relacional
 
----
+```
 
-💡 Consejo: GitHub muestra mejor los árboles cuando usas ```bash o ```plaintext en lugar de ``` sin lenguaje, porque conserva la indentación perfecta.
