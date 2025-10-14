@@ -1,6 +1,6 @@
 package com.proyecto1.auth.controller;
 
-import com.proyecto1.auth.dto.response.UserResponse;
+import com.proyecto1.auth.dto.UserResponse;
 import com.proyecto1.auth.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;

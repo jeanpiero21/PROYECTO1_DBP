@@ -1,7 +1,9 @@
 package com.proyecto1.auth.controller;
 
-import com.proyecto1.auth.dto.request.*;
-import com.proyecto1.auth.dto.response.*;
+import com.proyecto1.auth.dto.AuthResponse;
+import com.proyecto1.auth.dto.LoginRequest;
+import com.proyecto1.auth.dto.RegisterRequest;
+import com.proyecto1.auth.dto.UserResponse;
 import com.proyecto1.auth.service.AuthService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
