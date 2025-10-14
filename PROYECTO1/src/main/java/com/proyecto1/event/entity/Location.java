@@ -2,8 +2,9 @@ package com.proyecto1.event.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
-
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "locations")
@@ -27,4 +28,8 @@ public class Location {
     private Integer capacity;
 
     private LocalDateTime createdAt = LocalDateTime.now();
+
+    // 🔹 Relación con Event
+    @OneToMany(mappedBy = "location", cascade = CascadeType.ALL)
+    private List<Event> events = new ArrayList<>();
 }
