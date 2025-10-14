@@ -1,6 +1,6 @@
 package com.proyecto1.auth.dto;
 
-import com.proyecto1.auth.entity.Role;
+import com.proyecto1.common.enums.Role;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 

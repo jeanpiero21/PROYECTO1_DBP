@@ -7,7 +7,7 @@ import com.proyecto1.auth.dto.UserResponse;
 import com.proyecto1.auth.entity.User;
 import com.proyecto1.auth.repository.UserRepository;
 import com.proyecto1.auth.service.AuthService;
-import com.proyecto1.auth.entity.Role;
+import com.proyecto1.common.enums.Role;
 import com.proyecto1.config.JwtService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;

@@ -2,8 +2,9 @@ package com.proyecto1.event.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
-
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "categories")
@@ -26,4 +27,8 @@ public class Category {
     private String icon;
 
     private LocalDateTime createdAt = LocalDateTime.now();
+
+    // 🔹 Relación bidireccional con Event
+    @OneToMany(mappedBy = "category", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<Event> events = new ArrayList<>();
 }
