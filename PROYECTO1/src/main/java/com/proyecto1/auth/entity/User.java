@@ -1,10 +1,8 @@
 package com.proyecto1.auth.entity;
 
-import com.proyecto1.common.enums.Role;
 import jakarta.persistence.*;
 import lombok.*;
 import java.time.LocalDateTime;
-
 @Entity
 @Table(name = "users")
 @Getter @Setter @NoArgsConstructor @AllArgsConstructor @Builder
@@ -24,9 +22,16 @@ public class User {
     private String password;
 
     @Enumerated(EnumType.STRING)
-    @Column(nullable = false)
-    private Role role;
+    private Role role; // STUDENT, ORGANIZER, ADMIN
 
-    @Builder.Default
+    private String studentId;
+    private Boolean verified = false;
+    private String verificationCode;
+    private String profileImage;
+    private String phone;
+    private Boolean emailNotifications = true;
+    private Boolean pushNotifications = true;
+
     private LocalDateTime createdAt = LocalDateTime.now();
+    private LocalDateTime updatedAt = LocalDateTime.now();
 }
